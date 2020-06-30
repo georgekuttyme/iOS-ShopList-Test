@@ -2,8 +2,19 @@
 //  CommonApiRequest.swift
 //  Shop-List
 //
-//  Created by Georgekutty Joy on 30/06/20.
-//  Copyright © 2020 Georgekutty Joy. All rights reserved.
+//  Created by Legends on 29/06/20.
+//  Copyright © 2020 Legends. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Alamofire
+class CommonApiRequest: APIRequest {
+
+    override init() {
+        super.init()
+    }
+    convenience init(path: String) {
+           self.init()
+           self.path = self.path ?? "" + path
+       }
+}
