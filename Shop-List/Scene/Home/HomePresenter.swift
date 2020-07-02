@@ -39,6 +39,12 @@ class HomePresenter: NSObject {
     func filterListByActiveLocations(isActive: Bool) {
         self.pickupList = pickupList.filter { $0.active == isActive }
     }
+    ///  Select/unselect a value from list
+    func didSelectTableViewCell(at indexPath: IndexPath) {
+        var selectedData = self.pickupList[indexPath.row]
+        selectedData.didSelected = !(selectedData.didSelected ?? false)
+        self.pickupList[indexPath.row] = selectedData
+    }
 }
 
 extension HomePresenter {

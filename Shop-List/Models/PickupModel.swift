@@ -68,4 +68,5 @@ struct ShopPickupDetails {
     var city: String?
     var active: Bool?
     var distance: Double?
+    var didSelected: Bool?
 }

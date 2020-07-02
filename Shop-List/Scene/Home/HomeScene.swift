@@ -83,4 +83,7 @@ extension HomeScene:  UITableViewDelegate, UITableViewDataSource {
             }
         return cell!
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter.didSelectTableViewCell(at: indexPath)
+    }
 }

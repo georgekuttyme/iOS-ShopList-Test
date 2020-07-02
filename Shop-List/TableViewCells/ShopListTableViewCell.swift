@@ -40,6 +40,6 @@ class ShopListTableViewCell: UITableViewCell {
         self.addressLabel.text = shopDetails?.address ?? ""
         self.cityLabel.text = shopDetails?.city ?? ""
         self.distanceLabel.text = "\(shopDetails?.distance ?? 0) KM"
-        self.statusIcon.image = (shopDetails?.active ?? true) ? Images.activeIcon : Images.inActiveIcon
+        self.statusIcon.image = (shopDetails?.didSelected ?? true) ? Images.activeIcon : Images.inActiveIcon
     }
 }
