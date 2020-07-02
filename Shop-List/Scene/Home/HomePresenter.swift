@@ -72,7 +72,7 @@ extension HomePresenter {
             let userLocation = LocationManager.shared.getUsersLocationCordinators()
             let shopCoordinates = LocationManager.shared.getLocationFromCoordinates(latitude: details.latitude, longitude: details.longitude)
             let distanceInKM = LocationManager.shared.getDistanceByTwoCordinators(firstPoint: userLocation, secondPoint: shopCoordinates)
-            let locationDetails = ShopPickupDetails(name: details.name, address: details.address, city: details.city, active: details.active, distance: distanceInKM?.rounded())
+            let locationDetails = ShopPickupDetails(name: details.name, address: details.address, city: details.city, active: details.active, distance: distanceInKM?.rounded(), didSelected: false)
             shopPickupList.append(locationDetails)
         }
         return shopPickupList
