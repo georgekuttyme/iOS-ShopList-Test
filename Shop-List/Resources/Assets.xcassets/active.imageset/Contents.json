@@ -5,18 +5,18 @@
       "scale" : "1x"
     },
     {
+      "filename" : "checke copy.png",
       "idiom" : "universal",
-      "filename" : "check-circle-513.png",
       "scale" : "2x"
     },
     {
+      "filename" : "checke.png",
       "idiom" : "universal",
-      "filename" : "check-circle-512.png",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
