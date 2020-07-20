@@ -40,27 +40,13 @@ class HomeScene: BaseScene {
 ///    Method : didTapOnSort managing the clickaction for the navigation barbutton item
 ///    Loading the alert view controller for Loading filter options
     @objc private func didTapOnSort() {
-        let actionSheet = UIAlertController(title: ConstantLabels.sortTitle, message: nil, preferredStyle: .actionSheet)
-        
-            actionSheet.addAction(UIAlertAction(title: ConstantLabels.activeLocation, style: .default, handler: { (alert: UIAlertAction!) -> Void in
-                self.presenter.filterListByActiveLocations(isActive: true)
-                }))
-        
-            actionSheet.addAction(UIAlertAction(title: ConstantLabels.inActiveLocation, style: .default, handler: { (alert: UIAlertAction!) -> Void in
-                          self.presenter.filterListByActiveLocations(isActive: false)
-                }))
-        
-            actionSheet.addAction(UIAlertAction(title: ConstantLabels.distance, style: .default, handler: { (alert: UIAlertAction!) -> Void in
-                    self.presenter.filterListByShortestDistance()
-                }))
-        
-            actionSheet.addAction(UIAlertAction(title: ConstantLabels.resetFilter, style: .destructive, handler: { (alert: UIAlertAction!) -> Void in
-                    self.presenter.fetchPickupLocation()
-                }))
-        
-            actionSheet.addAction(UIAlertAction(title: ConstantLabels.cancel, style: .cancel, handler: nil))
-        
-            present(actionSheet, animated: true, completion: nil)
+        if let filterScene = SceneFactory.shared.getFilterScene() {
+                filterScene.view.backgroundColor = UIColor.clear
+                filterScene.modalPresentationStyle = .overCurrentContext
+                filterScene.modalTransitionStyle = .crossDissolve
+                filterScene.delegate = self
+                self.navigationController?.present(filterScene, animated: true, completion: nil)
+        }
     }
 }
 ///      pickupListTableView - Delegate methods
@@ -85,5 +71,22 @@ extension HomeScene:  UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.presenter.didSelectTableViewCell(at: indexPath)
+    }
+}
+///      FilterView - Delegate methods
+extension HomeScene: filterDelegates {
+    func didSelectFilterValues(index: Int) {
+        switch index {
+        case filterValues.active.rawValue:
+            self.presenter.filterListByActiveLocations(isActive: true)
+        case filterValues.inActive.rawValue:
+           self.presenter.filterListByActiveLocations(isActive: false)
+        case filterValues.distance.rawValue:
+             self.presenter.filterListByShortestDistance()
+        case filterValues.reset.rawValue:
+            self.presenter.fetchPickupLocation()
+        default:
+            break
+        }
     }
 }

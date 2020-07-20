@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ReachabilitySwift (4.3.1)
+  - SwiftLint (0.39.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - ReachabilitySwift (~> 4.3.1)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ReachabilitySwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+
+PODFILE CHECKSUM: c6962df836dd9869f00166b932b148397194704d
+
+COCOAPODS: 1.8.4

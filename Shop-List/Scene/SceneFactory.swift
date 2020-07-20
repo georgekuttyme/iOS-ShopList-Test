@@ -29,4 +29,9 @@ extension SceneFactory {
             let storyboard = self.getMainStoryboard()
             return storyboard.instantiateViewController(withIdentifier: "HomeScene") as? HomeScene
     }
+    
+    func getFilterScene() -> FileterScene? {
+               let storyboard = self.getMainStoryboard()
+               return storyboard.instantiateViewController(withIdentifier: "FileterScene") as? FileterScene
+       }
 }

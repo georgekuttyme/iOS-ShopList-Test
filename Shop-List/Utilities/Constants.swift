@@ -19,11 +19,12 @@ struct Images {
 /// Provide cell identifiers for the application
 struct CellIdentifier {
     static let HomeTableviewCellIdentifier = "ShopDetailsCell"
+    static let SimpleTableViewCell = "SimpleTableViewCell"
 }
 /// Provide constant texts used in the application
 struct ConstantLabels {
-    static let applicationTitle = "Shop List"
-    static let sortTitle = "Sort the pickup points"
+    static let applicationTitle = "Pickup Points"
+    static let sortTitle = "Sort the list"
     static let distance  = "Shortest distance"
     static let activeLocation = "Active locations"
     static let inActiveLocation = "Inactive locations"

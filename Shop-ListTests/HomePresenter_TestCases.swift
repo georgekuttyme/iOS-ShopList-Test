@@ -2,8 +2,8 @@
 //  HomePresenter_TestCases.swift
 //  Shop-ListTests
 //
-//  Created by Georgekutty Joy on 02/07/20.
-//  Copyright © 2020 Georgekutty Joy. All rights reserved.
+//  Created by Legends on 02/07/20.
+//  Copyright © 2020 Legends. All rights reserved.
 //
 
 import Foundation

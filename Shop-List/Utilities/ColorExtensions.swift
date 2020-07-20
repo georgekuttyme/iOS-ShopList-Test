@@ -12,7 +12,7 @@ extension UIColor {
 
 ///     Navy Blue - App theme colour
     class func appThemeColor() -> UIColor {
-        return UIColor.fromHex(hex: "0a1f44")
+        return UIColor.fromHex(hex: "04c2b8")
     }
 
 ///     White - background color

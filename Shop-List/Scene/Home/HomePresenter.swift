@@ -33,7 +33,7 @@ class HomePresenter: NSObject {
     }
 ///    Sorting the data on the list array based on the shortest distance
     func filterListByShortestDistance() {
-        self.pickupList = pickupList.sorted(by: { Int ($0.distance?.rounded() ?? 0) > Int ($1.distance?.rounded() ?? 0) })
+        self.pickupList = pickupList.sorted(by: { Int ($0.distance?.rounded() ?? 0) < Int ($1.distance?.rounded() ?? 0) })
     }
 ///    Sorting the data on the list array based on the active/Inactive pickup points
     func filterListByActiveLocations(isActive: Bool) {
