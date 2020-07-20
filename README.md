@@ -2,7 +2,8 @@
 
 ### Screenshots 
 
-![Simulator Screen Shot - iPhone 11 - 2020-07-02 at 09 30 28](https://user-images.githubusercontent.com/35802722/86316829-6ae23480-bc4b-11ea-90c3-e0f23cc6abb8.png), ![Simulator Screen Shot - iPhone 11 - 2020-07-02 at 09 30 50](https://user-images.githubusercontent.com/35802722/86316854-89e0c680-bc4b-11ea-81bd-a86eba5e28ee.png), ![Simulator Screen Shot - iPhone 11 - 2020-07-02 at 09 30 57](https://user-images.githubusercontent.com/35802722/86316878-97964c00-bc4b-11ea-9be1-8efab58445e3.png)
+![Simulator Screen Shot - iPhone 11 - 2020-07-20 at 13 20 47](https://user-images.githubusercontent.com/35802722/87915443-d4f23a80-ca8f-11ea-9e5b-e532f7d1d054.png),
+![Uploading Simulator Screen Shot - iPhone 11 - 2020-07-20 at 13.20.59.png…]()
 
 ### Requirements
 
